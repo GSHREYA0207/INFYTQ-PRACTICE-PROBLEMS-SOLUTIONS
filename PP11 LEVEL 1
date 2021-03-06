@@ -1,0 +1,19 @@
+#lex_auth_0127136021907046401165
+
+def find_upper_and_lower(sentence):
+    #start writing your code here
+    result_list=[]
+    l=u=0
+    for i in sentence:
+        if(i.islower()):
+            l+=1 
+        elif(i.isupper()):
+            u+=1
+        else:
+            pass
+    result_list=[u,l]
+       
+    return result_list
+
+sentence="Come Here"
+print(find_upper_and_lower(sentence))
