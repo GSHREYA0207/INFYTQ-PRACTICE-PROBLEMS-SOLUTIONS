@@ -1,0 +1,22 @@
+#lex_auth_0127136332814499841204
+
+def sum_of_elements(num_list,number):
+    i=0
+    result_sum=0
+    n1=len(num_list)-1
+    while i<n1:
+        if(num_list[i]==number):
+            i+=2
+        elif(num_list[i]!=number and num_list[i+1]!=number):
+            result_sum+=num_list[i]
+            i+=1
+        else:
+            i+=1
+    if(num_list[n1-1]!=number and num_list[n1]!=number):
+        result_sum+=num_list[n1]
+            
+    return result_sum
+      
+num_list=[1,7,3,4,1,7,10,5]
+number=7
+print(sum_of_elements(num_list, number))
