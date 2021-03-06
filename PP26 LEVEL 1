@@ -1,0 +1,19 @@
+#lex_auth_0127136253311385601197
+
+def check_occurence(string):
+    #start writing your code here
+    m=j=0
+    for i in range(0,len(string)-2):
+        if (string[i:i+3]=='Mat' or string[i:i+3]=='mat'):
+            m+=1 
+        elif (string[i:i+3]=='Jet' or string[i:i+3]=='jet'):
+            j+=1 
+        else:
+            pass
+    if(m==j):
+        return True
+    else:
+        return False
+        
+string="Jet on the Mat but mat is too long"
+print(check_occurence(string))
